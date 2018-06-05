@@ -1,0 +1,117 @@
+<!--
+  Generated template for the PeditPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Patients Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Patient Name</ion-label>
+    <ion-input [(ngModel)]="P.PName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label >Gender</ion-label>
+    <ion-select [(ngModel)]="P.sex">
+      <ion-option value="male">Male</ion-option>
+      <ion-option value="female">Female</ion-option>
+    </ion-select>
+  </ion-item> 
+
+  <ion-item>
+    <ion-label>Birthday</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="P.myDate"></ion-datetime>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label floating>Address</ion-label>
+    <ion-textarea [(ngModel)]="P.Add"></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>District</ion-label>
+    <ion-select [(ngModel)]="P.location">
+      <ion-option value="Colombo">Colombo</ion-option>
+      <ion-option value="Gampaha">Gampaha</ion-option>
+      <ion-option value="Kalutara">Kalutara</ion-option>
+      <ion-option value="Jaffna">Jaffna</ion-option>
+      <ion-option value="Kilinochchi">Kilinochchi</ion-option>
+      <ion-option value="Mannar">Mannar</ion-option>
+      <ion-option value="Mullaitivu">Mullaitivu</ion-option>
+      <ion-option value="Vavuniya">Vavuniya</ion-option>
+      <ion-option value="Puttalam">Puttalam</ion-option>
+      <ion-option value="Kurunegala">Kurunegala</ion-option>
+      <ion-option value="Anuradhapura">Anuradhapura</ion-option>
+      <ion-option value="Polonnaruwa">Polonnaruwa</ion-option>
+      <ion-option value="Matale">Matale</ion-option>
+      <ion-option value="Kandy">Kandy</ion-option>
+      <ion-option value="Nuwara-Eliya">Nuwara-Eliya</ion-option>
+      <ion-option value="Kegalle">Kegalle</ion-option>
+      <ion-option value="Ratnapura">Ratnapura</ion-option>
+      <ion-option value="Trincomalee">Trincomalee</ion-option>
+      <ion-option value="Batticaloa">Batticaloa</ion-option>
+      <ion-option value="Ampara">Ampara</ion-option>
+      <ion-option value="Badulla">Badullax</ion-option>
+      <ion-option value="Monaragala">Monaragala</ion-option>
+      <ion-option value="Hambantota">Hambantota</ion-option>
+      <ion-option value="Matara">Matara</ion-option>
+      <ion-option value="Galle">Galle</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Telephone Number</ion-label>
+    <ion-input [(ngModel)]="P.tp"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Disease</ion-label>
+      <ion-select [(ngModel)]="P.sick">
+        <ion-option value="Dengue">Dengue</ion-option>
+        <ion-option value="Malaria">Malaria</ion-option>
+        <ion-option value="Elephantiasis">Elephantiasis</ion-option>
+        <ion-option value="Chicken-pox">Chicken-pox</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Date of the Disease</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="P.diDate"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Illness level</ion-label>
+      <ion-select [(ngModel)]="P.ill">
+        <ion-option value="Low">Low</ion-option>
+        <ion-option value="Medium">Medium</ion-option>
+        <ion-option value="Critical">Critical</ion-option>
+        <ion-option value="Died">Died</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Blood Group</ion-label>
+        <ion-select [(ngModel)]="P.blood">
+          <ion-option value="O+">O+</ion-option>
+          <ion-option value="O-">O-</ion-option>
+          <ion-option value="A+">A+</ion-option>
+          <ion-option value="A-">A-</ion-option>
+          <ion-option value="B+">B+</ion-option>
+          <ion-option value="B-">B-</ion-option>
+          <ion-option value="AB+">AB+</ion-option>
+          <ion-option value="AB-">AB-</ion-option>
+          
+        </ion-select>
+      </ion-item>
+    
+   <button ion-button>Submit</button>
+</ion-content>
